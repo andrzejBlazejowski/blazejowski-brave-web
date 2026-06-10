@@ -1,0 +1,5 @@
+/* Photon .icon.major:before forces Font Awesome 5 Free, hiding brand icons. */
+ul.major-icons li .icon.brands.major:before {
+  font-family: "Font Awesome 5 Brands" !important;
+  font-weight: 400 !important;
+}

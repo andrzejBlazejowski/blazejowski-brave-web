@@ -24,6 +24,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic"
         />
         <link rel="stylesheet" href="/photon/assets/css/main.css" />
+        <link rel="stylesheet" href="/app-overrides.css" />
       </head>
       <body className="is-preload">{children}</body>
     </html>

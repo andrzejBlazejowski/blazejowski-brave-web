@@ -7,12 +7,12 @@ type SkillsSectionProps = {
 };
 
 const SKILL_ICONS = [
-  "fa-code",
-  "fa-bolt",
-  "fa-desktop",
-  "fa-cog",
-  "fa-calendar",
-  "fa-camera-retro",
+  { icon: "fa-react", variant: "brands" },
+  { icon: "fa-server", variant: "solid" },
+  { icon: "fa-laptop-code", variant: "solid" },
+  { icon: "fa-js-square", variant: "brands" },
+  { icon: "fa-cogs", variant: "solid" },
+  { icon: "fa-tv", variant: "solid" },
 ] as const;
 
 export function SkillsSection({
@@ -26,11 +26,11 @@ export function SkillsSection({
         <div className="row gtr-150">
           <div className="col-6 col-12-medium">
             <ul className="major-icons">
-              {SKILL_ICONS.map((icon, index) => (
+              {SKILL_ICONS.map(({ icon, variant }, index) => (
                 <li key={icon}>
                   <span
-                    className={`icon solid style${(index % 6) + 1} major ${icon}`}
-                  ></span>
+                    className={`icon ${variant} style${(index % 6) + 1} major ${icon}`}
+                  />
                 </li>
               ))}
             </ul>
