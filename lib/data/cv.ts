@@ -17,7 +17,7 @@ export const staticCvData: CvData = {
     {
       id: "bsg-spyrosoft",
       company: "The Better Software Group / Spyrosoft BSG",
-      role: "Senior / Middle Frontend Developer",
+      role: "Middle / acting as Senior Frontend Developer",
       location: "Wrocław, Poland",
       startDate: "2020-03",
       endDate: "current",
