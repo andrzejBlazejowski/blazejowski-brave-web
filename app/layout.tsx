@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Andrzej Błażejowski – Senior Frontend Developer",
+  title: "Andrzej Błażejowski – Middle / acting as Senior Frontend Developer",
   description:
-    "CV portfolio of Andrzej Błażejowski – Senior Frontend Developer specializing in React, TypeScript, Next.js, and cross-platform applications.",
+    "CV portfolio of Andrzej Błażejowski – Middle / acting as Senior Frontend Developer specializing in React, TypeScript, Next.js, and cross-platform applications.",
 };
 
 export default function RootLayout({

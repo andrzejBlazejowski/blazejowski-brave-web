@@ -3,7 +3,7 @@ import type { CvData } from "@/lib/types/cv";
 export const staticCvData: CvData = {
   profile: {
     name: "Andrzej Błażejowski",
-    title: "Senior Frontend Developer",
+    title: "Middle / acting as Senior Frontend Developer",
     summary:
       "Frontend engineer with 10+ years of experience building web applications, Smart TV/STB platforms, and cross-platform IPTV/VOD frameworks. Specialized in React, TypeScript, and Next.js with a track record of legacy migrations, performance optimization, and technical leadership across international telecom and food-delivery products.",
     email: "andrzej.blazejowski@gmail.com",
@@ -23,10 +23,11 @@ export const staticCvData: CvData = {
       endDate: "current",
       projects: [
         {
-          id: "pizza-hut",
-          title: "Amrest – Food Delivery Web Application (Pizza Hut)",
+          id: "qsr-food-delivery",
+          title:
+            "Global QSR Franchise Operator – Multi-Market Food(mostly pizza) Delivery Platform",
           summary:
-            "Modernisation of high-traffic food delivery web application across 3 markets, improving maintainability and cost-effectiveness.",
+            "Modernisation of a high-traffic food delivery web application for a leading European restaurant group operating a major international pizza brand across 3 markets, improving maintainability and cost-effectiveness.",
           highlights: [
             "Legacy Migration: Upgraded application from Next.js 9 to 16+, Node 14 to 24+, and React 16 to 19, Leaflet raster tiles to MapTiler vector tiles eliminating technical debt.",
             "SEO Optimization: Increased visibility by implementing dynamic sitemaps and URL-accessible subpages.",
@@ -45,10 +46,11 @@ export const staticCvData: CvData = {
           featured: true,
         },
         {
-          id: "kiosk-analytics",
-          title: "Amrest – Food Ordering Kiosk Application (Burger King & KFC)",
+          id: "qsr-kiosk-analytics",
+          title:
+            "Global QSR Franchise Operator – In-Store Self-Order Kiosk Analytics(mostly burger and fried-chicken brands)",
           summary:
-            "Took ownership of a kiosk application analytics system mid-development, successfully driving its integration and delivery to production.",
+            "Took ownership of an in-store kiosk analytics system for a leading restaurant franchise operator (major burger and fried-chicken brands), driving integration and delivery to production.",
           highlights: [
             "Business Intelligence Integration: Implemented user-behavior analytics system to optimise business ROI.",
             "Technical Leadership: Mentored engineers on performance and introduced architectural improvements.",
@@ -76,10 +78,11 @@ export const staticCvData: CvData = {
           ],
         },
         {
-          id: "sixty-ease",
-          title: "Sixty – Ease Framework",
+          id: "iptv-vod-framework",
+          title:
+            "Enterprise IPTV/VOD Platform – Cross-Platform White-Label Framework",
           summary:
-            "Contributed to the development of a cross-platform, white-label IPTV/VOD framework deployed across Set-Top Boxes (Huawei, Skyworth), PCs, and smartphones for international telecom operators (including Altibox, Telecom Serbia, Cyta).",
+            "Contributed to a cross-platform, white-label IPTV/VOD framework deployed across set-top boxes, PCs, and smartphones for tier-1 international telecom operators across Nordic, Balkans, and Mediterranean markets.",
           highlights: [
             "Contract Delivery & Revenue Retention: Resolved legacy flaws (race conditions, network resilience issues), securing a major contract milestone.",
             "Cross-Platform Core Development: Co-created the multi-platform framework, including a unified Design System and TV navigation.",
@@ -99,13 +102,13 @@ export const staticCvData: CvData = {
           featured: true,
         },
         {
-          id: "theoplayer-roku",
-          title: "THEOplayer – VOD Player SDK for Roku Platform",
+          id: "vod-player-sdk-roku",
+          title: "Enterprise Video Player SDK – Roku Platform",
           summary:
-            "Co-developed THEOplayer SDK for the Roku platform from the ground up as part of a 2-engineer team.",
+            "Co-developed a commercial VOD player SDK for the Roku platform from the ground up as part of a 2-engineer team.",
           highlights: [
             "SDK Architecture & API Alignment: Engineered core BrightScript structure, aligning the public API with web/mobile standards.",
-            "Advanced Video Capabilities: Implemented DRM protection, closed captions, Adaptive Bitrate Streaming (ABR), and Verizon Media Ads.",
+            "Advanced Video Capabilities: Implemented DRM protection, closed captions, Adaptive Bitrate Streaming (ABR), and programmatic video ad integration.",
             "Test Automation Integration: Architected automated testing via MQTT protocols for remote player control and metadata collection.",
             "Technical Documentation: Authored developer documentation, tutorials, and reference apps for enterprise integrators.",
           ],
@@ -115,7 +118,7 @@ export const staticCvData: CvData = {
             "MQTT",
             "DRM",
             "ABR",
-            "Verizon Media Ads",
+            "Programmatic Video Ads",
             "SDK Architecture",
           ],
           featured: true,
