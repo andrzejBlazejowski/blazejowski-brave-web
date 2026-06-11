@@ -1,8 +1,11 @@
 import { staticCvData } from "@/lib/data/cv";
+import { fetchCvFromStrapi, isStrapiConfigured } from "@/lib/strapi/fetch-cv";
 import type { CvData } from "@/lib/types/cv";
 
 export async function getCvData(): Promise<CvData> {
-  // Phase 1: static data
-  // Phase 2: if (process.env.STRAPI_URL) fetch from Strapi and map to CvData
-  return staticCvData;
+  if (!isStrapiConfigured()) {
+    return staticCvData;
+  }
+
+  return fetchCvFromStrapi();
 }
