@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:ipfs": "node scripts/build-ipfs.mjs",
     "start": "next start",
     "lint": "eslint"
   },

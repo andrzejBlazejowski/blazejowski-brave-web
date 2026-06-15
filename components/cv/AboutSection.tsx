@@ -1,3 +1,4 @@
+import { publicAssetPath } from "@/lib/build-target";
 import type { CvProfile } from "@/lib/types/cv";
 
 type AboutSectionProps = {
@@ -5,7 +6,8 @@ type AboutSectionProps = {
 };
 
 export function AboutSection({ profile }: AboutSectionProps) {
-  const photoUrl = profile.photoUrl ?? "/photon/images/pic01.jpg";
+  const photoUrl =
+    profile.photoUrl ?? publicAssetPath("/photon/images/pic01.jpg");
 
   return (
     <section id="one" className="main style1">

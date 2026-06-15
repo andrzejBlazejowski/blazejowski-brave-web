@@ -1,3 +1,4 @@
+import { publicAssetPath } from "@/lib/build-target";
 import type { CvEmployment } from "@/lib/types/cv";
 
 type FeaturedProjectsSectionProps = {
@@ -5,9 +6,9 @@ type FeaturedProjectsSectionProps = {
 };
 
 const FALLBACK_IMAGES = [
-  "/photon/images/pic02.jpg",
-  "/photon/images/pic03.jpg",
-  "/photon/images/pic04.jpg",
+  publicAssetPath("/photon/images/pic02.jpg"),
+  publicAssetPath("/photon/images/pic03.jpg"),
+  publicAssetPath("/photon/images/pic04.jpg"),
 ];
 
 function formatDateRange(start: string, end: string | "current"): string {

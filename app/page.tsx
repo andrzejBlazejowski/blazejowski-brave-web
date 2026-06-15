@@ -8,6 +8,8 @@ import { PhotonEffects } from "@/components/cv/PhotonEffects";
 import { SkillsSection } from "@/components/cv/SkillsSection";
 import { getCvData } from "@/lib/services/cv";
 
+export const dynamic = "force-static";
+
 export default async function Home() {
   const cv = await getCvData();
 
