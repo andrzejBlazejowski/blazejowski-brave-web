@@ -40,6 +40,8 @@ async function writeGithubOutput(key, value) {
 }
 
 async function createDirectorySignedUploadUrl(jwt, pinName, keyvalues) {
+  const date = Math.floor(Date.now() / 1000);
+
   const response = await fetch(`${V3_UPLOADS_BASE}/files/sign`, {
     method: "POST",
     headers: {
@@ -47,6 +49,7 @@ async function createDirectorySignedUploadUrl(jwt, pinName, keyvalues) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
+      date,
       network: "public",
       expires: SIGNED_URL_TTL_SECONDS,
       filename: pinName,
