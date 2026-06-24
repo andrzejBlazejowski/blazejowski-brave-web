@@ -3,7 +3,7 @@
 # One-time GitHub setup (repo Settings):
 #
 # 1. Secrets → Actions:
-#    - PINATA_JWT        — Pinata API JWT (Files read + write)
+#    - PINATA_JWT        — Pinata API JWT (V3: org:files:write)
 #    - STRAPI_URL        — Strapi base URL (reachable from GitHub runners)
 #    - STRAPI_API_TOKEN  — Strapi API token
 #
